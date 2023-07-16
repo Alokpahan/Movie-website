@@ -3,6 +3,10 @@
 @media screen and (max-width : 425px) {
 
     /* NAVIGATION SECTION */
+    .logo{
+        height: 60px;
+        width: 60px;
+    }
     .search {
         display: flex;
         margin-left: 0.1px;
@@ -15,23 +19,5 @@
 
 
     }
-
-}
-
-@media screen and (max-width : 429px) {
-
     
-    /* NAVIGATION SECTION */
-    .search {
-        display: flex;
-        margin-left: 0.1px;
-
-    }
-
-    .items {
-        display: flex;
-        margin-left: 10px;
-
-
-    }
 }
