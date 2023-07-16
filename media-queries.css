@@ -1,23 +1,20 @@
-/* RESPONSIVE SECTOION */
-
-@media screen and (max-width : 425px) {
+@media (min-width : 79px) and (max-width : 934px) {
 
     /* NAVIGATION SECTION */
-    .logo{
-        height: 60px;
-        width: 60px;
+
+    .input-group {
+        display: none;
     }
-    .search {
-        display: flex;
-        margin-left: 0.1px;
+}
 
+/* FOR Smaller Devices Search Bar */
+
+@media (min-width : 576px) {
+
+    .form-mobile {
+        display: none;
+        
     }
 
-    .items {
-        display: flex;
-        margin-left: 10px;
 
-
-    }
-    
 }

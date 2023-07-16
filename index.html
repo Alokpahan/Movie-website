@@ -20,28 +20,35 @@
 
     <header>
 
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark navbar-inverse">
             <div class="d-flex flex-grow-1">
-                <a  class="navbar-brand" href="/">
+                <a class="navbar-brand" href="/">
                     <img src=".\Images\logo.png" alt="logo" class="logo">
                 </a>
-                <form class="mr-2 my-auto w-100 d-inline-block order-1" action="#/action_page.php" >
-                    <div class="input-group " >
+
+                <!-- Search bar -->
+                <form class="mr-2 my-auto w-100 d-inline-block order-1 " action="#/action_page.php">
+                    <div class="input-group">
                         <input type="text" class="form-control border border-right-0" placeholder="Search...">
                         <span class="input-group-append">
-                            <button class="btn btn-outline-light border border-left-0" type="submit" >
+                            <button class="btn btn-outline-light border border-left-0" type="submit">
                                 <i class="fa fa-search"></i>
                             </button>
                         </span>
                     </div>
                 </form>
+
+
+
+
+
             </div>
             <button class="navbar-toggler order-0" type="button" data-toggle="collapse" data-target="#navbar7">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="navbar-collapse collapse flex-shrink-1 flex-grow-0 order-last" id="navbar7">
-                 <!-- Navbar links -->
-                 <div class="items">
+                <!-- Navbar links -->
+                <div class="items">
                     <ul class="navbar-nav navbar-nav  navbar-expand-sm justify-content-center-evenly text-center ">
                         <li class="nav-item">
                             <a class="nav-link active" href="">LIVE</a>
@@ -117,13 +124,22 @@
                             </div>
                         </li>
 
+                        <!-- FOR Smaller Devices Search Bar -->
+                        
+                        <form class="form-mobile" action="/form1-action">
+
+                            <div class="form-group">
+                                <form class="form-inline" action="/action_page.php">
+                                    <input class="form-control mb-1" type="text" placeholder="Search...">
+                                    <button class="btn btn-success" type="submit" ><i class="fa fa-search"></i> Search</button>
+                                </form>
+                            </div>                    
+                        </form>
+
                     </ul>
                 </div>
             </div>
         </nav>
-
-
-
     </header>
 
 
