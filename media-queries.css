@@ -17,3 +17,33 @@
     }
 
 }
+
+@media screen and (max-width : 320px) {
+
+    .navbar{
+    
+    }
+
+    /* NAVIGATION SECTION */
+    .search {
+        
+        
+        
+
+    }
+    
+
+    .items {
+        
+        
+        
+        
+
+
+    }
+    .search-bar{
+        
+        
+        
+    }
+}

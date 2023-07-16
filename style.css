@@ -14,8 +14,13 @@
 }
 .search{
     display: flex;
+    width: 400px;
     margin-left: 250px;
     margin-right: 10px;
+}
+
+.search-bar{
+    width: 400px;
 }
 .items{
     display: flex;
