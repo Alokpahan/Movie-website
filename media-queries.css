@@ -18,32 +18,20 @@
 
 }
 
-@media screen and (max-width : 320px) {
+@media screen and (max-width : 429px) {
 
-    .navbar{
     
-    }
-
     /* NAVIGATION SECTION */
     .search {
-        
-        
-        
+        display: flex;
+        margin-left: 0.1px;
 
     }
-    
 
     .items {
-        
-        
-        
-        
+        display: flex;
+        margin-left: 10px;
 
 
-    }
-    .search-bar{
-        
-        
-        
     }
 }
