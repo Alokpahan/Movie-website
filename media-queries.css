@@ -1,0 +1,19 @@
+/* RESPONSIVE SECTOION */
+
+@media screen and (max-width : 425px) {
+
+    /* NAVIGATION SECTION */
+    .search {
+        display: flex;
+        margin-left: 0.1px;
+
+    }
+
+    .items {
+        display: flex;
+        margin-left: 10px;
+
+
+    }
+
+}

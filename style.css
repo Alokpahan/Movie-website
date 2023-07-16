@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    border: boder-box;
+}
+.navbar-brand{
+    display: flex;
+    margin-bottom: 5px;
+
+}
+.logo{
+    height: 60px;
+    width: 200px;
+}
+.search{
+    display: flex;
+    margin-left: 250px;
+    margin-right: 10px;
+}
+.items{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 50px;
+}
