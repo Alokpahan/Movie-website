@@ -13,6 +13,13 @@
 
 /* NAVIGATION SECTION */
 
+
+
+.nav-item:hover {
+    background-color: slategrey;  
+}
+
+
 .navbar-brand {
     display: flex;
     margin-bottom: 5px;
