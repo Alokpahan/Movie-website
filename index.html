@@ -49,7 +49,7 @@
             <div class="navbar-collapse collapse flex-shrink-1 flex-grow-0 order-last" id="navbar7">
                 <!-- Navbar links -->
                 <div class="items">
-                    <ul class="navbar-nav navbar-nav  navbar-expand-sm justify-content-center-evenly text-center ">
+                    <ul class="navbar-nav navbar-nav  navbar-expand-sm  text-center ">
                         <li class="nav-item">
                             <a class="nav-link active" href="">LIVE</a>
 
@@ -125,15 +125,16 @@
                         </li>
 
                         <!-- FOR Smaller Devices Search Bar -->
-                        
-                        <form class="form-mobile" action="/form1-action">
+
+                        <form class="form-mobile" action="#/form1-action">
 
                             <div class="form-group">
-                                <form class="form-inline" action="/action_page.php">
+                                <form class="form-inline" action="#/action_page.php">
                                     <input class="form-control mb-1" type="text" placeholder="Search...">
-                                    <button class="btn btn-success" type="submit" ><i class="fa fa-search"></i> Search</button>
+                                    <button class="btn btn-success" type="submit"><i class="fa fa-search"></i>
+                                        Search</button>
                                 </form>
-                            </div>                    
+                            </div>
                         </form>
 
                     </ul>
@@ -141,6 +142,534 @@
             </div>
         </nav>
     </header>
+
+    <!-- Carousel Section -->
+
+    <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="6000">
+        <ol class="carousel-indicators">
+            <li data-target="#carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel" data-slide-to="1"></li>
+            <li data-target="#carousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+                <a href="">
+                    <img src=".\Images\carousel\movie-0.jpg" alt="Image 1" class="d-block img-fluid">
+                    <div class="carousel-caption">
+                        <div>
+                            <span class="btn btn-sm btn-danger"><i class="fas fa-play-circle"></i> Watch Now</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!-- /.carousel-item -->
+            <div class="carousel-item">
+                <a href="">
+                    <img src=".\Images\carousel\movie-1.jpg" alt="Image 2" class="d-block img-fluid">
+                    <div class="carousel-caption ">
+                        <div>
+
+                            <span class="btn btn-sm btn-danger"><i class="fas fa-play-circle"></i> Watch Now</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!-- /.carousel-item -->
+            <div class="carousel-item">
+                <a href="">
+                    <img src=".\Images\carousel\movie-2.jpg" alt="Image 3" class="d-block img-fluid">
+                    <div class="carousel-caption ">
+                        <div>
+                            <span class="btn btn-sm btn-danger"><i class="fas fa-play-circle"></i> Watch Now</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!-- /.carousel-item -->
+        </div>
+        <!-- /.carousel-inner -->
+        <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <!-- /.carousel -->
+
+
+    <!-- MAIN SECTION -->
+
+    <!-- upcoming  section -->
+    <section class="upcoming">
+        <div class="container-fluid">
+            <div class="flex">
+                <div class="title-wrapper">
+                    <p class="section-subtitle ">Online Streaming</p>
+                    <h2 class="h2 section-title ">Coming soon to theaters</h2>
+                </div>
+
+
+                <ul class="filter-list ">
+                    <li>
+                        <button class="filter-btn btn-sm btn-dark mt-4">Movies</button>
+                        <button class="filter-btn btn-sm btn-dark mt-4">TV Shows</button>
+                        <button class="filter-btn btn-sm btn-dark mt-4">Anime</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+
+        <!-- CARD SECTION-->
+
+
+        <div class="container-fluid">
+
+            <div class="card-deck">
+                <div class="card mb-4">
+                    <img class="card-img-top img-fluid" src=".\Images\upcoming\Blue Beetle.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h6 class="card-title">Blue Beetle</h6>
+                        <p class="card-text">2023</p>
+                        <div class="container">
+                            <button type="button" class="btn  btn-md btn-block btn-primary"><i
+                                    class="far fa-play-circle"></i>
+                                Watch Trailer </button>
+                        </div>
+                        <p class="card-text"><small class="text-muted"></small></p>
+                    </div>
+                </div>
+                <div class="card mb-4">
+                    <img class="card-img-top img-fluid" src=".\Images\upcoming\The Equalizer 3.jpg"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <h6 class="card-title">The Equalizer 3</h6>
+                        <p class="card-text">2023</p>
+                        <div class="container">
+                            <button type="button" class="btn  btn-md btn-block btn-primary"><i
+                                    class="far fa-play-circle"></i>
+                                Watch Trailer </button>
+                        </div>
+                        <p class="card-text"><small class="text-muted"></small></p>
+                    </div>
+                </div>
+                <div class="w-100 d-none d-sm-block d-md-none"><!-- wrap every 2 on sm--></div>
+                <div class="card mb-4">
+                    <img class="card-img-top img-fluid" src=".\Images\upcoming\Oppenheimer.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h6 class="card-title">Oppenheimer</h6>
+                        <p class="card-text">2023</p>
+                        <div class="container">
+                            <button type="button" class="btn  btn-md btn-block btn-primary"><i
+                                    class="far fa-play-circle"></i>
+                                Watch Trailer </button>
+                        </div>
+                        <p class="card-text"><small class="text-muted"></small></p>
+                    </div>
+                </div>
+                <div class="w-100 d-none d-md-block d-lg-none"><!-- wrap every 3 on md--></div>
+                <div class="card mb-4">
+                    <img class="card-img-top img-fluid" src=".\Images\upcoming\Meg 2 The Trench.jpg "
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <h6 class="card-title">Meg 2 The Trench</p>
+                        </h6>
+                        <p class="card-text">2023</p>
+                        <div class="container">
+                            <button type="button" class="btn  btn-md btn-block btn-primary"><i
+                                    class="far fa-play-circle"></i>
+                                Watch Trailer </button>
+                        </div>
+                        <p class="card-text"><small class="text-muted"></small></p>
+                    </div>
+                </div>
+                <div class="w-100 d-none d-sm-block d-md-none"><!-- wrap every 2 on sm--></div>
+                <div class="w-100 d-none d-lg-block d-xl-none"><!-- wrap every 4 on lg--></div>
+                <div class="card mb-4">
+                    <img class="card-img-top img-fluid" src=".\Images\upcoming\Last Voyage of the Demeter.jpg"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <h6 class="card-title">Last Voyage of the <br> Demeter
+                        </h6>
+                        <p class="card-text">2023</p>
+                        <div class="container">
+                            <button type="button" class="btn  btn-md btn-block btn-primary"><i
+                                    class="far fa-play-circle"></i>
+                                Watch Trailer </button>
+                        </div>
+                        <p class="card-text"><small class="text-muted"></small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- Explore what's streaming section -->
+
+
+    <section class="upcoming">
+        <div class="container-fluid">
+            <div class="explore">
+                <div class="title-wrapper">
+                    <h2 class="section-title">Explore what's streaming</h2>
+                </div>
+            </div>
+        </div>
+        <ul class="filter-list2 ">
+            <li>
+
+                <button class="filter-btn btn-sm btn-dark mb-3">PRIME VIDEO</button>
+                <button class="filter-btn btn-sm btn-dark mb-3">NETFLIX</button>
+                <button class="filter-btn btn-sm btn-dark mb-3">VOOT</button>
+                <button class="filter-btn btn-sm btn-dark mb-3">EROSNOW</button>
+                <button class="filter-btn btn-sm btn-dark mb-3">SONYLIV</button>
+                <button class="filter-btn btn-sm btn-dark mb-3">HOTSTAR</button>
+
+            </li>
+        </ul>
+
+
+
+        <!-- CARD SECTION-->
+
+
+        <div class="container-fluid">
+
+            <div class="card-deck ">
+                <div class="card mb-4">
+                    <a href="#">
+                        <img class="card-img-top img-fluid" src=".\Images\top-rated-movies\Schindler's List.jpg"
+                            alt="Card image cap">
+                        <div class="card-body ">
+                            <h6 class="card-title">Schindler's List</h6>
+                    </a>
+                    <p class="card-text">1993</p>
+                    <div class="d-flex   mb-0 bg-">
+                        <div class="p-0 flex-fill ml- bg-"><i class="fas fa-tv"></i> 4K </div>
+                        <div class="p-0 flex-fill ml-2 bg- "><i class="far fa-clock"></i> 195 min</div>
+                        <div class="p-0 flex-fill ml-2 bg-"><i class="fas fa-star"></i> 9.0 </div>
+                    </div>
+                    <p class="card-text"><small class="text-muted"></small></p>
+                </div>
+            </div>
+            <div class="card mb-4">
+
+                <img class="card-img-top img-fluid" src=".\Images\top-rated-movies\The Prestige.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h6 class="card-title">The Prestige</h6>
+
+                    <p class="card-text">2006</p>
+
+                    <div class="d-flex   mb-0 bg-">
+                        <div class="p-0 flex-fill ml- bg-"><i class="fas fa-tv"></i> 4K </div>
+                        <div class="p-0 flex-fill ml-2 bg- "><i class="far fa-clock"></i> 130 min</div>
+                        <div class="p-0 flex-fill ml-2 bg-"><i class="fas fa-star"></i> 8.5 </div>
+                    </div>
+                    <p class="card-text"><small class="text-muted"></small></p>
+                </div>
+            </div>
+            <div class="w-100 d-none d-sm-block d-md-none"><!-- wrap every 2 on sm--></div>
+            <div class="card mb-4">
+
+                <img class="card-img-top img-fluid" src=".\Images\top-rated-movies\Inception.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h6 class="card-title">Inception</h6>
+
+                    <p class="card-text">2010</p>
+                    <div class="d-flex   mb-0 bg-">
+                        <div class="p-0 flex-fill ml- bg-"><i class="fas fa-tv"></i> 2K </div>
+                        <div class="p-0 flex-fill ml-2 bg- "><i class="far fa-clock"></i> 148 min</div>
+                        <div class="p-0 flex-fill ml-2 bg-"><i class="fas fa-star"></i> 8.8 </div>
+                    </div>
+                    <p class="card-text"><small class="text-muted"></small></p>
+                </div>
+            </div>
+            <div class="w-100 d-none d-md-block d-lg-none"><!-- wrap every 3 on md--></div>
+            <div class="card mb-4">
+
+                <img class="card-img-top img-fluid" src=".\Images\top-rated-movies\The Dark Knight.jpg " alt="Card image cap">
+                <div class="card-body">
+                    <h6 class="card-title">The Dark Knight</p>
+                    </h6>
+
+                    <p class="card-text">2008</p>
+                    <div class="d-flex   mb-0 bg-">
+                        <div class="p-0 flex-fill ml- bg-"><i class="fas fa-tv"></i> 4K </div>
+                        <div class="p-0 flex-fill ml-2 bg- "><i class="far fa-clock"></i> 152 min</div>
+                        <div class="p-0 flex-fill ml-2 bg-"><i class="fas fa-star"></i> 9.0 </div>
+                    </div>
+                    <p class="card-text"><small class="text-muted"></small></p>
+                </div>
+            </div>
+            <div class="w-100 d-none d-sm-block d-md-none"><!-- wrap every 2 on sm--></div>
+            <div class="w-100 d-none d-lg-block d-xl-none"><!-- wrap every 4 on lg--></div>
+
+            <div class="card mb-4">
+
+                <img class="card-img-top img-fluid" src=".\Images\top-rated-movies\Everything Everywhere All at Once.jpg"
+                    alt="Card image cap">
+                <div class="card-body">
+                    <h6 class="card-title">Everything <br>Everywhere All <br>at Once
+                    </h6>
+
+                    <p class="card-text">2014</p>
+                    <div class="d-flex   mb-0 bg-">
+                        <div class="p-0 flex-fill ml- bg-"><i class="fas fa-tv"></i> HD </div>
+                        <div class="p-0 flex-fill ml-2 bg- "><i class="far fa-clock"></i> 169 min</div>
+                        <div class="p-0 flex-fill ml-2 bg-"><i class="fas fa-star"></i> 8.7 </div>
+                    </div>
+                    <p class="card-text"><small class="text-muted"></small></p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!--  BEST TV SERIES-->
+    <!-- World Best TV Series -->
+
+    <section class="upcoming">
+        <div class="container-fluid">
+            <div class="tv-series">
+                <div class="title-wrapper">
+                    <p class="section-subtitle2">BEST TV SERIES</p>
+                    <h2 class="section-title ">World Best TV Series</h2>
+                </div>
+            </div>
+        </div>
+        
+        <!-- CARD SECTION-->
+
+
+        <div class="container-fluid">
+
+            <div class="card-deck">
+                <div class="card mb-4">
+                    <a href="#">
+                        <img class="card-img-top img-fluid" src=".\Images\tv-series\Breaking Bad.jpg"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h6 class="card-title">Breaking Bad</h6>
+                    </a>
+                    <p class="card-text">2018-2013</p>
+                    <div class="d-flex   mb-0 bg-">
+                        <div class="p-0 flex-fill ml- bg-"><i class="fas fa-tv"></i> 4K </div>
+                        <div class="p-0 flex-fill ml-2 bg- "><i class="far fa-clock"></i> 49 min</div>
+                        <div class="p-0 flex-fill ml-2 bg-"><i class="fas fa-star"></i> 9.5 </div>
+                    </div>
+                    <p class="card-text"><small class="text-muted"></small></p>
+                </div>
+            </div>
+            <div class="card mb-4">
+
+                <img class="card-img-top img-fluid" src=".\Images\tv-series\The Last of US.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h6 class="card-title">The Equalizer 3</h6>
+
+                    <p class="card-text">2023</p>
+
+                    <div class="d-flex   mb-0 bg-">
+                        <div class="p-0 flex-fill ml- bg-"><i class="fas fa-tv"></i> HD </div>
+                        <div class="p-0 flex-fill ml-2 bg- "><i class="far fa-clock"></i> 50 min</div>
+                        <div class="p-0 flex-fill ml-2 bg-"><i class="fas fa-star"></i> 8.8 </div>
+                    </div>
+                    <p class="card-text"><small class="text-muted"></small></p>
+                </div>
+            </div>
+            <div class="w-100 d-none d-sm-block d-md-none"><!-- wrap every 2 on sm--></div>
+            <div class="card mb-4">
+
+                <img class="card-img-top img-fluid" src=".\Images\tv-series\Hollywood.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h6 class="card-title">Hollywood</h6>
+
+                    <p class="card-text">2020</p>
+                    <div class="d-flex   mb-0 bg-">
+                        <div class="p-0 flex-fill ml- bg-"><i class="fas fa-tv"></i> HD </div>
+                        <div class="p-0 flex-fill ml-2 bg- "><i class="far fa-clock"></i> 137 min</div>
+                        <div class="p-0 flex-fill ml-2 bg-"><i class="fas fa-star"></i> 7.5 </div>
+                    </div>
+                    <p class="card-text"><small class="text-muted"></small></p>
+                </div>
+            </div>
+            <div class="w-100 d-none d-md-block d-lg-none"><!-- wrap every 3 on md--></div>
+            <div class="card mb-4">
+
+                <img class="card-img-top img-fluid" src=".\Images\tv-series\The Walking Dead.jpg " alt="Card image cap">
+                <div class="card-body">
+                    <h6 class="card-title">The Walking Dead</p>
+                    </h6>
+
+                    <p class="card-text">2010-22</p>
+                    <div class="d-flex   mb-0 bg-">
+                        <div class="p-0 flex-fill ml- bg-"><i class="fas fa-tv"></i> 2K </div>
+                        <div class="p-0 flex-fill ml-2 bg- "><i class="far fa-clock"></i> 44 min</div>
+                        <div class="p-0 flex-fill ml-2 bg-"><i class="fas fa-star"></i> 8.1 </div>
+                    </div>
+                    <p class="card-text"><small class="text-muted"></small></p>
+                </div>
+            </div>
+            <div class="w-100 d-none d-sm-block d-md-none"><!-- wrap every 2 on sm--></div>
+            <div class="w-100 d-none d-lg-block d-xl-none"><!-- wrap every 4 on lg--></div>
+
+            <div class="card mb-4">
+
+                <img class="card-img-top img-fluid" src=".\Images\tv-series\Game of Thrones.jpg"
+                    alt="Card image cap">
+                <div class="card-body">
+                    <h6 class="card-title">Game of Thrones
+                    </h6>
+
+                    <p class="card-text">2011-2019</p>
+                    <div class="d-flex   mb-0 bg-">
+                        <div class="p-0 flex-fill ml- bg-"><i class="fas fa-tv"></i> 4K </div>
+                        <div class="p-0 flex-fill ml-2 bg- "><i class="far fa-clock"></i> 57 min</div>
+                        <div class="p-0 flex-fill ml-2 bg-"><i class="fas fa-star"></i> 9.2 </div>
+                    </div>
+                    <p class="card-text"><small class="text-muted"></small></p>
+                </div>
+            </div>
+
+        </div>
+
+        
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+
+        <div class="footer-content bg-dark ">
+
+            <div class="container-fluid">
+
+                <div class="footer-links">
+                    <ul class="footer-list">
+                        <h1 class="footer-brand"><a class="navbar-brand" href="/">
+                                <img src=".\Images\logo.png" alt="logo" class="footer-logo">
+                            </a></h1>
+                        <div>
+                            <P class="slogan">Movies & TV Shows, Online cinema, <br> Movie database HTML
+                                Template</P>
+                        </div>
+
+                        <div class="social-link">
+                            <a href=""><i class="fab fa-facebook"></i></a>
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                            <a href=""><i class="fab fa-google"></i></a>
+                            <a href=""><i class="fab fa-youtube"></i></a>
+                            <a href=""><i class="fab fa-github"></i></a>
+
+                        </div>
+
+                    </ul>
+
+                    <ul class="footer-list">
+                        <h4 class="link-heading">MovieNexus</h4>
+                        <li class="link-item"><a href="">About us</a></li>
+                        <li class="link-item"><a href="">Contact us</a></li>
+                        <li class="link-item"><a href="">Request us</a></li>
+                        <li class="link-item"><a href="">Connects us</a></li>
+                    </ul>
+
+                    <ul class="footer-list">
+                        <h4 class="link-heading">Browse</h4>
+                        <li class="link-item"><a href="">Live Tv</a></li>
+                        <li class="link-item"><a href="">Live News</a></li>
+                        <li class="link-item"><a href="">Live Sports</a></li>
+                        <li class="link-item"><a href="">Streaming Library</a></li>
+                    </ul>
+
+                    <ul class="footer-list">
+                        <h4 class="link-heading">Help</h4>
+                        <li class="link-item"><a href="">Account</a></li>
+                        <li class="link-item"><a href="">Supported Devices</a></li>
+                        <li class="link-item"><a href="">Accessibility</a></li>
+                        <li class="link-item"><a href="">New Features & Updates</a></li>
+                    </ul>
+
+                </div>
+
+            </div>
+            <hr class="mb-3" />
+
+            <div class="container-fluid ">
+                <div class="footer-copyright ">
+                    <div class="copyright">
+                        <p>Copyright &copy; 2023. MovieNexus. All rights reserved.</p>
+                    </div>
+
+
+                    <div class="wrapper d-flex  flex-wrap">
+                        <a href="">Terms of Use</a>
+                        <a href="">Privacy Policy</a>
+                        <a href="">Cookie Policy</a>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

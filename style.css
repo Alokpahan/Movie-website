@@ -1,28 +1,41 @@
 * {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+
     border: boder-box;
 }
-.navbar-brand{
+ body{
+    background-color: #222c3c;
+    color: white;
+
+    
+} 
+
+
+/* NAVIGATION SECTION */
+
+.navbar-brand {
     display: flex;
     margin-bottom: 5px;
 
 }
-.logo{
+
+.logo {
     height: 60px;
     width: 200px;
 }
-.search{
+
+.search {
     display: flex;
     width: 400px;
     margin-left: 250px;
     margin-right: 10px;
 }
 
-.search-bar{
+.search-bar {
     width: 400px;
 }
-.items{
+
+.items {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -30,4 +43,261 @@
 }
 
 
+/* CAROUSEL SECTION */
 
+/* Make the image fully responsive */
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-caption {
+    display: flex;
+    justify-content: end;
+}
+
+
+/* UPCOMMING SECTION */
+
+
+
+.section-subtitle {
+    text-transform: uppercase;
+    color: red;
+    font-size: small;
+}
+
+
+
+.flex {
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.upcoming .section-title {
+    margin-bottom: 5px;
+    font-size: 45px;
+}
+
+.filter-list {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+}
+
+
+.filter-list2 {
+    display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    position: relative;
+    
+
+}
+
+.upcoming .filter-btn {
+    border: 1px solid;
+    padding: 12px 26px;
+    border-radius: 50px
+}
+
+
+/* Card  */
+.card {
+    border: none;
+    
+
+}
+
+.card-img-top {
+    width: 100%;
+    height: 350px;
+    /* Adjust the height as desired */
+    object-fit: cover;
+}
+
+.card-body {
+    
+    background-color: #343a40;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    
+}
+
+.card-title {
+    color: white;
+    
+}
+.card-text{
+    color: yellow;
+    display: flex;
+    flex-wrap: wrap;   
+}
+
+.card-title:hover {
+    cursor: pointer;
+    color: yellow;
+    text-decoration: underline;
+
+}
+
+.card-img-top:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+/*  Explore what's streaming section*/
+
+.explore{
+    margin-top: 50px;
+margin-bottom: 30px;
+}
+
+/* TV SERIES SECTION */
+
+.tv-series {
+    text-align: center;
+    margin: 30px;
+   
+}
+
+
+.section-subtitle2{
+    margin-top: 60px;
+    text-transform: uppercase;
+    color: yellow;
+    font-size: medium;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer Section */
+.footer-logo {
+    height: 60px;
+    width: 230px;
+    justify-content: space-between;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.footer-content {
+
+    background-color: #222c3c;
+    color: white;
+    padding: 40px 0;
+}
+
+.footer-brand {
+    text-transform: uppercase;
+    font-family: Algerian;
+    color: white;
+    font-size: 38px;
+    text-decoration: none;
+
+}
+
+.slogan {
+    color: white;
+    display: flex;
+    justify-content: left;
+    font-size: 14px;
+}
+
+.social-link a {
+    color: white;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.link-heading {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.link-item {
+    margin-bottom: 10px;
+}
+
+.link-item a {
+    color: white;
+    text-decoration: none;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: px;
+}
+
+.wrapper a {
+    color: white;
+    margin-right: 20px;
+    text-decoration: none;
+
+}
+
+.wrapper a:last-child {
+    margin-right: 0;
+}
+
+.footer-copyright {
+
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1px;
+    margin-left: 36px;
+    margin-bottom: 5px;
+
+}
+
+.footer-list {
+    list-style-type: none;
+
+}
+
+.footer-list-3 {
+    margin-top: 23px;
+    list-style-type: none;
+}
