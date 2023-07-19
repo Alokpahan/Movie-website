@@ -1,0 +1,388 @@
+<?php
+include('db_con.php');
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieNexus - Your Movie Database</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-queries.css">
+</head>
+
+<body>
+
+    <header>
+
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+            <div class="d-flex flex-grow-1">
+                <a class="navbar-brand" href="/">
+                    <img src=".\Images\logo.png" alt="logo" class="logo">
+                </a>
+
+                <!-- Search bar -->
+                <form class="mr-2 my-auto w-100 d-inline-block order-1 " action="#/action_page.php">
+                    <div class="input-group">
+                        <input type="text" class="form-control border border-right-0" placeholder="Search...">
+                        <span class="input-group-append">
+                            <button class="btn btn-outline-light border border-left-0" type="submit">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </span>
+                    </div>
+                </form>
+
+
+            </div>
+            <button class="navbar-toggler order-0" type="button" data-toggle="collapse" data-target="#navbar7">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse flex-shrink-1 flex-grow-0 order-last" id="navbar7">
+                <!-- Navbar links -->
+                <div class="items">
+                    <ul class="navbar-nav navbar-nav  navbar-expand-sm  text-center ">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="">LIVE</a>
+
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.php"> Home</a>
+
+                        </li>
+
+                        <!-- DROP DOWN SECTION-->
+                        <!-- CATEGORY -->
+                        <li class="nav-item dropdown">
+
+                            <a class="nav-link dropdown-toggle active" id="navbardrop" data-toggle="dropdown">
+                                Category
+                            </a>
+
+                            <div class="dropdown-menu  dropdown-menu-right bg-light" style="width:300px">
+
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <a class="dropdown-item category-item" href="">Action</a>
+                                            <a class="dropdown-item category-item" href="">Thriller</a>
+                                            <a class="dropdown-item category-item" href="">Drama</a>
+                                            <a class="dropdown-item category-item" href="">Crime</a>
+                                            <a class="dropdown-item category-item" href="">Adventure</a>
+                                            <a class="dropdown-item category-item" href="">Family</a>
+                                            <a class="dropdown-item category-item" href="">Animation</a>
+                                            <a class="dropdown-item category-item" href="">Fantasy</a>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <a class="dropdown-item category-item" href="">Sci-Fi</a>
+                                            <a class="dropdown-item category-item" href="">Romance</a>
+                                            <a class="dropdown-item category-item" href="">Horror</a>
+                                            <a class="dropdown-item category-item" href="">Sports</a>
+                                            <a class="dropdown-item category-item" href="">Biography</a>
+                                            <a class="dropdown-item category-item" href="">History</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href=""><i class="fas fa-sign-in-alt"></i> Sign
+                                In</a>
+                        </li>
+                        <!-- DROP DOWN SECTION-->
+                        <!-- LANGUAGE -->
+
+                        <li class="nav-item dropdown">
+
+                            <a class="nav-link dropdown-toggle active" id="navbardrop" data-toggle="dropdown"><i class="fas fa-globe"></i>
+                                EN
+                            </a>
+
+                            <div class="dropdown-menu  dropdown-menu-right bg-light">
+
+                                <a class="dropdown-item" href="">English (United States) <i class="fa fa-check text-success ms-2"> </i></a>
+                                <a class="dropdown-item" href="">Hindi</a>
+                                <a class="dropdown-item" href="">Canada</a>
+                                <a class="dropdown-item" href="">Français</a>
+                                <a class="dropdown-item" href="">Polski</a>
+                                <a class="dropdown-item" href="">中文</a>
+                                <a class="dropdown-item" href="">日本語</a>
+                                <a class="dropdown-item" href="">Deutsch</a>
+                                <a class="dropdown-item" href="">Español</a>
+                                <a class="dropdown-item" href="">Русский</a>
+                                <a class="dropdown-item" href="">Português</a>
+                            </div>
+                        </li>
+
+                        <!-- FOR Smaller Devices Search Bar -->
+
+                        <form class="form-mobile" action="#/form1-action">
+
+                            <div class="form-group ">
+                                <form class="form-inline" action="#/action_page.php">
+                                    <input class="form-control mb-1" type="text" placeholder="Search...">
+                                    <button class="btn btn-success " type="submit"><i class="fa fa-search"></i>
+                                        Search</button>
+                                </form>
+                            </div>
+                        </form>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- Feed-back form -->
+
+    <div class="container">
+        <form action="server.php" method="POST" class="form bg-dark  ">
+            <h3>Send us your feedback <br> We're here to help! </h3>
+            <br>
+            <p>We value your feedback! Let us know how we can improve.</p>
+            <p><span class="error text-left "> * required field </span> </P>
+
+            <div class="form-group">
+                <label for="name">Name: * </label>
+                <input type="text" name="name" class="form-control" placeholder="Enter your Name" required>
+
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email: * </label>
+                <input type="email" name="email" class="form-control" placeholder="Enter your Email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone no: </label>
+                <input type="phone" name="phone" class="form-control" placeholder="Enter your Phone number">
+
+            </div>
+
+            <div class="form-group">
+                <label for="age">Age: * </label>
+                <input type="text" id="age" name="age" class="form-control" placeholder="Enter your age" required>
+            </div>
+
+            <div class="form-group">
+                <label for="dob">Date of Birth: * </label>
+                <input type="date" id="dob" name="dob" class="form-control" required>
+            </div>
+
+            <div class="form-group">
+                <label for="occupation">Occupation:</label>
+                <input type="text" id="occupation" name="occupation" class="form-control" placeholder="Enter your occupation">
+            </div>
+
+            <div class="form-group">
+                <label for="gender">Gender: * </label>
+                <br>
+                <input type="radio" name="gender" value="F" required> Female
+                <input type="radio" name="gender" value="M" required> Male
+                <input type="radio" name="gender" value="O" required> Other
+            </div>
+
+            <div class="form-group">
+                <label for="country">Country: *</label>
+                <select class="form-control" id="country" name="country" required>
+                    <option value="">Select your country</option>
+                    <option value="USA">USA</option>
+                    <option value="UK">UK</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Australia">Australia</option>
+                    <option value="Germany">Germany</option>
+                    <option value="France">France</option>
+                    <option value="Spain">Spain</option>
+                    <option value="Italy">Italy</option>
+                    <option value="Japan">Japan</option>
+                    <option value="China">China</option>
+                    <option value="India">India</option>
+                    <option value="Brazil">Brazil</option>
+                    <option value="Mexico">Mexico</option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="Russia">Russia</option>
+                    <option value="South Korea">South Korea</option>
+                    <option value="Netherlands">Netherlands</option>
+                    <option value="Sweden">Sweden</option>
+                    <option value="Switzerland">Switzerland</option>
+                    <option value="Norway">Norway</option>
+                    <option value="Denmark">Denmark</option>
+                    <option value="Finland">Finland</option>
+                    <option value="Belgium">Belgium</option>
+                    <option value="Austria">Austria</option>
+                    <option value="Greece">Greece</option>
+                    <option value="Ireland">Ireland</option>
+                    <option value="Portugal">Portugal</option>
+                    <option value="New Zealand">New Zealand</option>
+                    <option value="Singapore">Singapore</option>
+                    <option value="Malaysia">Malaysia</option>
+                    <option value="Thailand">Thailand</option>
+                    <option value="South Africa">South Africa</option>
+                </select>
+
+                <br>
+
+                <div class="form-group">
+                    <label for="website">Website:</label>
+                    <input type="text" id="website" name="website" class="form-control" placeholder="Enter your website URL">
+                </div>
+
+                <div class="form-group">
+                    <label for="rating">Rating: * </label>
+                    <select class="form-control" id="rating" name="rating" required>
+                        <option value="">Select rating</option>
+                        <option value="5">5 Stars</option>
+                        <option value="4">4 Stars</option>
+                        <option value="3">3 Stars</option>
+                        <option value="2">2 Stars</option>
+                        <option value="1">1 Star</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="contact_method">Preferred Contact Method: * </label>
+                    <select class="form-control" id="contact_method" name="contact_method" required>
+                        <option value="">Select preferred contact method</option>
+                        <option value="Email">Email</option>
+                        <option value="Phone">Phone</option>
+                        <option value="SMS">SMS</option>
+                        <option value="Mail">Mail</option>
+
+
+                    </select>
+                </div>
+
+
+                <div class="form-group">
+                    <label>Address: </label>
+                    <textarea class="form-control" id="address" name="address" rows="4" placeholder="Enter your address"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>Comment: *</label>
+                    <textarea class="form-control" id="message" name="message" rows="5" placeholder="Share your thoughts with us! We're eager to hear your feedback." required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <div class="form-check">
+                        <input type="checkbox" id="agreement" name="agreement" class="form-check-input" required>
+                        <label class="form-check-label" for="agreement">I agree to the terms and conditions</label>
+                    </div>
+                </div>
+
+
+                <button type="submit" name="submit" class="btn btn-primary btn-block mb-2"> Submit </button>
+
+            </div>
+
+        </form>
+
+
+
+
+    </div>
+
+    <div class="d-flex justify-content-center">
+        <a href="index.php">
+            <button class="btn btn-warning mb-4">Home</button>
+        </a>
+    </div>
+
+
+
+    <!-- Footer Section -->
+
+
+    <footer>
+
+        <div class="footer-content bg-dark ">
+
+            <div class="container-fluid">
+
+                <div class="footer-links">
+                    <ul class="footer-list">
+                        <h1 class="footer-brand"><a class="navbar-brand" href="/">
+                                <img src=".\Images\logo.png" alt="logo" class="footer-logo">
+                            </a></h1>
+                        <div>
+                            <P class="slogan">Movies & TV Shows, Online cinema, <br> Movie database HTML
+                                Template</P>
+                        </div>
+
+                        <div class="social-link">
+                            <a href=""><i class="fab fa-facebook"></i></a>
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                            <a href=""><i class="fab fa-google"></i></a>
+                            <a href=""><i class="fab fa-youtube"></i></a>
+                            <a href=""><i class="fab fa-github"></i></a>
+
+                        </div>
+
+                    </ul>
+
+                    <ul class="footer-list">
+                        <h4 class="link-heading">MovieNexus</h4>
+                        <li class="link-item"><a href="">About us</a></li>
+                        <li class="link-item"><a href="">Contact us</a></li>
+                        <li class="link-item"><a href="">Request us</a></li>
+                        <li class="link-item"><a href="">Connects us</a></li>
+                    </ul>
+
+                    <ul class="footer-list">
+                        <h4 class="link-heading">Browse</h4>
+                        <li class="link-item"><a href="">Live Tv</a></li>
+                        <li class="link-item"><a href="">Live News</a></li>
+                        <li class="link-item"><a href="">Live Sports</a></li>
+                        <li class="link-item"><a href="">Streaming Library</a></li>
+                    </ul>
+
+                    <ul class="footer-list">
+                        <h4 class="link-heading">Help</h4>
+                        <li class="link-item"><a href="">Account</a></li>
+                        <li class="link-item"><a href="">Supported Devices</a></li>
+                        <li class="link-item"><a href="">Accessibility</a></li>
+                        <li class="link-item"><a href="">New Features & Updates</a></li>
+                    </ul>
+
+                </div>
+
+            </div>
+            <hr class="mb-3" />
+
+            <div class="container-fluid ">
+                <div class="footer-copyright ">
+                    <div class="copyright">
+                        <p>Copyright &copy; 2023. MovieNexus. All rights reserved.</p>
+                    </div>
+
+
+                    <div class="wrapper d-flex  flex-wrap">
+                        <a href="">Terms of Use</a>
+                        <a href="">Privacy Policy</a>
+                        <a href="">Cookie Policy</a>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+
+    </footer>
+
+
+
+</body>
+
+</html>
