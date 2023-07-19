@@ -4,7 +4,8 @@
     border: boder-box;
 }
  body{
-    background-color: #222c3c;
+    
+  background-color: #222c3c;
     color: white;
 
     
@@ -14,11 +15,12 @@
 /* NAVIGATION SECTION */
 
 
-
 .nav-item:hover {
-    background-color: slategrey;  
-}
 
+    background-color: slategrey;
+        
+
+}
 
 .navbar-brand {
     display: flex;
@@ -65,7 +67,7 @@
 
 .carousel-caption {
     display: flex;
-    justify-content: end;
+    justify-content:center
 }
 
 
@@ -198,15 +200,47 @@ margin-bottom: 30px;
 
 
 
+/* FEED-BACK */
+
+.feedback{
+    text-align: center;
+    padding: 50px;
+}
 
 
 
 
+/* feed-back page */
 
 
 
+body {
+    background-color: rgb(44, 43, 43);
+}
 
+.form h3 {
+    text-align: center;
+    color: white;
+}
 
+.form p {
+    text-align: left;
+    color: white;
+}
+
+container .btn-primary {
+    margin-top: 20px;
+}
+
+.form {
+    
+    max-width: 500px;
+    margin: 100px auto 50px;
+    padding: 20px;
+    border-radius: 10px;
+
+    
+}
 
 
 
@@ -236,7 +270,7 @@ margin-bottom: 30px;
 
     background-color: #222c3c;
     color: white;
-    padding: 40px 0;
+    padding-top: 30px;
 }
 
 .footer-brand {
@@ -300,7 +334,7 @@ margin-bottom: 30px;
     justify-content: space-between;
     margin-top: 1px;
     margin-left: 36px;
-    margin-bottom: 5px;
+    
 
 }
 
@@ -313,3 +347,14 @@ margin-bottom: 30px;
     margin-top: 23px;
     list-style-type: none;
 }
+
+
+
+
+
+
+
+
+
+
+ 
