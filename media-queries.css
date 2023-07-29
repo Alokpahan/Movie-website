@@ -51,9 +51,6 @@
 
     }
 
-    
-
-
     .upcoming .section-title {
         text-align: center;
 
@@ -65,10 +62,5 @@
         /* Adjust the height as desired */
         object-fit: cover;
     }
-
-    .carousel-caption {
-        display: none;
-    }
-
 
 }

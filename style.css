@@ -67,7 +67,7 @@
 
 .carousel-caption {
     display: flex;
-    justify-content:center
+    justify-content:end
 }
 
 
@@ -126,7 +126,8 @@
 /* Card  */
 .card {
     border: none;
-    
+    height: fit-content;
+
 
 }
 
@@ -135,6 +136,7 @@
     height: 350px;
     /* Adjust the height as desired */
     object-fit: cover;
+    
 }
 
 .card-body {
@@ -347,7 +349,6 @@ container .btn-primary {
     margin-top: 23px;
     list-style-type: none;
 }
-
 
 
 
