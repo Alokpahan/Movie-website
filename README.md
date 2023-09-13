@@ -44,8 +44,7 @@ Discover some of the best TV series with information on video quality, duration,
 #### Feedback and Bug Reporting
 We value your feedback and welcome bug reports. If you encounter any issues or have suggestions for improvement, please submit feedback and bug reports here.
 
-#### Contributing
-We encourage contributions from the community. If you'd like to contribute to MovieNexus, please follow our contribution guidelines.
+
 
 
 
