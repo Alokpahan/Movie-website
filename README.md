@@ -72,11 +72,7 @@ Contributing
 
 We encourage contributions from the community. If you'd like to contribute to MovieNexus, please follow our contribution guidelines.
 
-License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-With this README structure, you provide a clear and organized guide to your MovieNexus project. Make sure to update sections like "Prerequisites" and "Installation" with specific information relevant to your project. Additionally, create a separate CONTRIBUTING.md file with detailed contribution guidelines if you plan to accept contributions from others.
 
 
 
