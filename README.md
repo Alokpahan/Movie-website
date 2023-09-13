@@ -1,4 +1,4 @@
-MovieNexus - Your Movie Database
+# MovieNexus - Your Movie Database
 
 Introduction
 
