@@ -1,6 +1,6 @@
 # MovieNexus - Your Movie Database
 
-MovieNexus is a web application that serves as your personal movie database. It allows you to search for movies, TV shows, and anime, explore upcoming releases, and discover what's streaming on popular platforms like Prime Video, Netflix, and more. This README provides an overview of how to use MovieNexus and its key features.
+MovieNexus is a web application that serves as your personal movie database. It allows you to search for movies, TV shows, and anime, explore upcoming releases, and discover what's streaming on popular platforms like Prime Video, Netflix, and more. 
 
 ## Prerequisites
 Before you can use MovieNexus, ensure you have the following:
