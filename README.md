@@ -10,7 +10,7 @@ Before you can use MovieNexus, ensure you have the following:
 
 ## Clone this repository to your local machine:
 
-git clone:- https://github.com/your-username/MovieNexus.git
+git clone:- https://github.com/your-username/MovieNexus.git <br>
 Live at:- https://alokpahan.github.io/Movie-website/
 ## Usage
 
